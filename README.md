@@ -5,7 +5,12 @@
 
 ## Background
 
+This is an introduction to TDA.
+
+
 ## Results
+
+
 
 ## Notebooks
 
