@@ -15,6 +15,10 @@ This is an introduction to TDA.
 ## Notebooks
 
 
+- [TDA Sample](https://github.com/jnancy/tda-applications/blob/master/notebooks/TDA%20sample.ipynb) - some commonly used methods for TDA + visualizations
+- [ECG](https://github.com/jnancy/tda-applications/blob/master/notebooks/ECG.ipynb)
+- [Diabetes](https://github.com/jnancy/tda-applications/blob/master/notebooks/diabetes.ipynb) 
+
 ## Datasets Used
 - [ECG of Cardiac Ailments](https://www.kaggle.com/datasets/akki2703/ecg-of-cardiac-ailments-dataset)
 - [Diabetes Dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset)
