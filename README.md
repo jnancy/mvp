@@ -9,11 +9,11 @@ Topological Data Analysis (TDA) is a recent field that emerged from various work
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/2/26/Mug_and_Torus_morph.gif)
 
-Today, data is often represented as point clouds which can be embedded into Euclidean or other metric spaces. TDA aims to provide both qualitative and quantitative information about the complex geometric structures underlying this data. It can be highly effective when used in combination with or complementarily to other data science tools.
+Today, data is often characterized by having some intrinsic geometric shape.  For example, especially in computer vision, we can think of images as being embedded in Euclidean space, with a number associated to each pixel representing the color intensity at that pixel.  We can further represent data in terms of point clouds, where we might want to embed our data in other spaces.  TDA aims to provide both qualitative and quantitative information about the complex geometric structures underlying this data. It can be highly effective when used in combination with or complementarily to other data science tools.
 
 ## Persistent Homology
 
-One useful technique in TDA persistent homology, which can be viewed as examining holes in a shape across different dimensions. In 0D, this would mean the number of connected components, in 1D we would count loops, in 2D we would count voids. In the coffee cup donut example, both have 1 hole (H<sub>2</sub> = 1). In our MNIST example further below, the number '9' when written has a loop so it has an H<sub>1</sub> = 1, whereas '8' would have H<sub>1</sub> = 2.
+One useful technique in TDA persistent homology, which can be viewed as examining holes in a shape across different dimensions. In 0D, this would mean the number of connected components, in 1D we would study loops, in 2D we would count voids. In the coffee cup-donut example, both have 1 hole (H<sub>2</sub> = $\mathbb{Z}$). In our MNIST example further below, the number '9' when written has a loop so it has an H<sub>1</sub> = 1, whereas '8' would have H<sub>1</sub> = 2.
 
 In order to use persistent homology there are a few steps:
 
