@@ -13,7 +13,7 @@ Today, data is often characterized by having some intrinsic geometric shape.  Fo
 
 ## Persistent Homology
 
-One useful technique in TDA persistent homology, which can be viewed as examining holes in a shape across different dimensions. In 0D, this would mean the number of connected components, in 1D we would study loops, in 2D we would count voids. In the coffee cup-donut example, both have 1 hole (H<sub>2</sub> = $\mathbb{Z}$). In our MNIST example further below, the number '9' when written has a loop so it has an H<sub>1</sub> = 1, whereas '8' would have H<sub>1</sub> = 2.
+One useful technique in TDA persistent homology, which can be viewed as examining holes in a shape across different dimensions. In 0D, this would mean the number of connected components, in 1D we would study loops, in 2D we would count voids. In the coffee cup-donut example, both have 1 hole (H<sub>2</sub> = $\mathbb{Z}$). In our MNIST example further below, the number '9' when written has a loop so it has an H<sub>1</sub> = $\mathbb{Z}$, whereas '8' would have H<sub>1</sub> = $\mathbb{Z}^2$.
 
 In order to use persistent homology there are a few steps:
 
@@ -37,8 +37,6 @@ In our [MNIST notebook](https://github.com/jnancy/tda-applications/blob/master/n
 1. Preprocess data (e.g. binarization of image, rotations)
    ![](assets/binarization.png)
 
-We skipped the simplicial complex step, since the data is already very nice geometrically.
-
 2. Construct filtrations (the growing circles around a point, we could also use a different shape)
    ![](assets/filtration.png)
 
@@ -55,7 +53,7 @@ This is just a small proof of concept. We can spend more time and effort choosin
 
 ## Mapper
 
-Another application of topology, separate from persistence homology is the Mapper algorithm. 
+Another application of topology, separate from persistent homology is the Mapper algorithm. 
 
 Given a dataset of points, the basic steps behind Mapper are as follows:
 
@@ -72,8 +70,7 @@ Given a dataset of points, the basic steps behind Mapper are as follows:
 
 This algorithm is pretty cool since it reduces the dimensional complexity of the original data space substantially into a simpler connected graph, upon which further data analysis/techniques can be used. 
 
-The edges of this graph also represent important relations between data and clusters and topological substructures like loops can be explored further. This is a great tool for dimension reduction since substructures of the original space are found and highlighted and typicall represent the more importent clusters.
-
+The edges of this graph also represent important relations between data and clusters and topological substructures like loops can be explored further. This is a great tool for dimension reduction since substructures of the original space are found and highlighted and typically represent the more important clusters.
 
 **Sample Use Case** ([source](https://www.cambridge.org/core/books/topological-data-analysis-for-genomics-and-evolution/FCC8429FAD2B5D1525AEA47A8366D6EB))
 
